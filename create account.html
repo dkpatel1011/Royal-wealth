@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Create an Account</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0);
+    background-color: #000000;
+  }
+
+  /* Left image section */
+  .left {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  .left h2 {
+    font-size: 20px;
+    color: white;
+    max-width: 80%;
+  }
+
+  /* Right form section */
+  .right {
+    flex: 1;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right h2 {
+    font-size: 24px;
+    color: #7B68EE;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a4457;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .terms {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 8px;
+  }
+
+  /* Submit button */
+  .btn-primary {
+    background-color: #7c4dff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #00FF00;
+  }
+
+  /* Social buttons */
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: opacity 0.3s;
+  }
+
+  .google {
+    background-color: #7B68EE;
+  }
+
+  .apple {
+    background-color: #7B68EE;
+  }
+
+  .social-btn:hover {
+    opacity: 0.9;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left {
+      min-height: 200px;
+    }
+    .social-buttons {
+      flex-direction: column;
+    }
+    .social-btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Left image section -->
+  <div class="left">
+  <video autoplay muted loop playsinline style="width:120%; height:100%; object-fit:cover;">
+    <source src="C:\Users\ASUS\OneDrive\Desktop\Royal Wealth\dollor.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  </div>
+
+  <!-- Right form section -->
+  <div class="right">
+    <h2>Create an Account</h2>
+    <p>Already have an account? <a href="login1.html" style="color:#7FFF00;"> Log in</a></p>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="First Name" required />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Last Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Patner code" />
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Create Password" required />
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Confirm Password" required />
+      </div>
+      <div class="terms">
+        <input type="checkbox" required /> I agree to the <a href="#" style="color:#7FFF00;">Terms & Conditions</a>.
+      </div>
+      <button class="btn-primary" type="submit">Create Account</button>
+    </form>
+    <div class="social-buttons">
+      <button class="social-btn google">Sign up Using Google</button>
+      <button class="social-btn apple">Sign up Using Apple</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

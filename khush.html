@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Royal Wealth</title>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!-- Link to external CSS file (agar hai toh) -->
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* Additional styling for header to fix it at top */
+  header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0,255,0);
+    z-index: 999;
+  }
+  /* To add some space for content below header */
+  body {
+    padding-top: 80px; /* Adjust depending on header height */
+  }
+</style>
+</head>
+<body>
+
+<!-- Header with Logo and Company Name -->
+<header>
+  <!-- Logo and Company Name -->
+  <div style="display:flex; align-items:center;">
+    <img src="C:\Users\ASUS\OneDrive\Desktop\Royal Wealth\Screenshot 2025-06-28 221306.png" alt="Company Logo" style="height:70px; width:auto; margin-right:10px;" />
+    <h1 style="margin:0; font-size:24px;">Royal Wealth (Money Empire)</h1>
+  </div>
+  <!-- Navigation Menu -->
+  <nav style="margin-left:auto;">
+    <a href="index.html" style="margin:0 10px;">Home</a>
+    <a href="login1.html" style="margin:0 10px;">Login</a>
+    <a href="#" style="margin:0 10px;">About</a>
+    <a href="#" style="margin:0 10px;">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<div class="hero" style="margin-top:80px; text-align:center; padding:50px 20px; background-color:#f5f5f5;">
+  <h2>Invest in Forex Easily</h2>
+  <p>Join Royal Wealth today and start earning!</p>
+  <a href="#" class="btn" style="padding:10px 20px; background:#ff6600; border:none; border-radius:5px; color:#fff; cursor:pointer;">Get Started</a>
+</div>
+
+<!-- Packages Slider Section -->
+<div class="swiper" style="margin-top:50px; padding:20px;">
+  <div class="swiper-wrapper">
+    <!-- Starter Package -->
+    <div class="swiper-slide">
+      <div class="package-card" style="background:#696969; padding:20px; border-radius:10px; box-shadow:1 2px 8px rgba(0,255,0); text-align:center;">
+        <h3 style="color:#ffd700;">Starter</h3>
+        <p>100 USDT</p>
+        <p>3%</p>
+        <p>Per Monthly</p>
+        <button style="padding:10px 20px; background:#ff6600; border:none; border-radius:5px; color:#fff; cursor:pointer;">Buy Now</button>
+      </div>
+    </div>
+    <!-- Bronze Package -->
+    <div class="swiper-slide">
+      <div class="package-card" style="background:#696969; padding:20px; border-radius:10px; box-shadow:1 2px 8px rgba(0,255,0); text-align:center;">
+        <h3 style="color:#ffd700;">Bronze</h3>
+        <p>300 USDT</p>
+        <p>4%</p>
+        <p>Per Monthly</p>
+        <button style="padding:10px 20px; background:#ff6600; border:none; border-radius:5px; color:#fff; cursor:pointer;">Buy Now</button>
+      </div>
+    </div>
+    <!-- Silver Package -->
+    <div class="swiper-slide">
+      <div class="package-card" style="background:#696969; padding:20px; border-radius:10px; box-shadow:1 2px 8px rgba(0,255,0); text-align:center;">
+        <h3 style="color:#ffd700;">Silver</h3>
+        <p>500 USDT</p>
+        <p>5%</p>
+        <p>Per Monthly</p>
+        <button style="padding:10px 20px; background:#ff6600; border:none; border-radius:5px; color:#fff; cursor:pointer;">Buy Now</button>
+      </div>
+    </div>
+    <!-- Gold Package -->
+    <div class="swiper-slide">
+      <div class="package-card" style="background:#696969; padding:20px; border-radius:10px; box-shadow:1 2px 8px rgba(0,255,0); text-align:center;">
+        <h3 style="color:#ffd700;">Gold</h3>
+        <p>1000 USDT</p>
+        <p>6%</p>
+        <p>Per Monthly</p>
+        <button style="padding:10px 20px; background:#ff6600; border:none; border-radius:5px; color:#fff; cursor:pointer;">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Navigation Buttons -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Footer -->
+<footer style="text-align:center; padding:20px; background:#222; color:#fff; margin-top:50px;">
+  © 2025 Royal Wealth. All rights reserved.
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+</body>
+</html>
